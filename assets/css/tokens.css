@@ -1,0 +1,45 @@
+/* Nordic Grind design tokens. All colours, type, spacing and radii live here. */
+:root {
+  /* Palette: five colours from the shop's materials */
+  --kalk: #EAE5DB;    /* limewashed brick: page background */
+  --roast: #2B2420;   /* dark roast: text, dark sections */
+  --oak: #B98A55;     /* oak counters: surfaces, rules */
+  --ler: #9C4F32;     /* fired clay cups: the single accent */
+  --salvie: #8C9A82;  /* sage cabinets: quiet secondary accent */
+
+  /* Derived tints (same hues, not new colours) */
+  --roast-soft: color-mix(in srgb, var(--roast) 72%, var(--kalk));
+  --kalk-soft: color-mix(in srgb, var(--kalk) 74%, var(--roast));
+  --rule: color-mix(in srgb, var(--oak) 45%, var(--kalk));
+  --rule-dark: color-mix(in srgb, var(--oak) 35%, var(--roast));
+  --ler-deep: color-mix(in srgb, var(--ler) 82%, var(--roast));
+
+  /* Type */
+  --font-display: "Young Serif", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-body: "Familjen Grotesk", "Avenir Next", "Segoe UI", sans-serif;
+
+  --step-display: clamp(2.75rem, 1.55rem + 4.1vw, 5.5rem);
+  --step-h2: clamp(2rem, 1.45rem + 1.9vw, 3.5rem);
+  --step-h3: clamp(1.25rem, 1.12rem + 0.45vw, 1.625rem);
+  --step-body: clamp(1.0625rem, 1.03rem + 0.12vw, 1.125rem);
+  --step-small: 0.9375rem;
+
+  /* Layout */
+  --gutter: 16px;
+  --nav-height: 58px;
+  --max-width: 1360px;
+  --section-space: clamp(4.5rem, 3rem + 7vw, 9rem);
+
+  /* Radii: images get a little softness, controls a little less */
+  --radius-image: 6px;
+  --radius-control: 4px;
+
+  --ease: cubic-bezier(.2, .7, .2, 1);
+}
+
+@media (min-width: 790px) {
+  :root {
+    --gutter: 40px;
+    --nav-height: 92px;
+  }
+}

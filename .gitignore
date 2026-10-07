@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Reference material, not part of the site
+Inspiration/
+
+# Local Claude Code settings (launch.json is shared on purpose)
+.claude/*
+!.claude/launch.json

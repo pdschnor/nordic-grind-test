@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nordic Grind, coffee bar and roastery in Copenhagen</title>
+  <meta name="description" content="Nordic Grind is a coffee bar on Blågårdsgade in Copenhagen. We roast our beans on Tuesdays in the back room and pour them at the front.">
+  <meta name="theme-color" content="#EAE5DB">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nordic Grind">
+  <meta property="og:description" content="Coffee bar and small roastery on Blågårdsgade, Copenhagen N.">
+  <meta property="og:image" content="assets/images/hero-1600.jpg">
+  <meta property="og:locale" content="en_GB">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400..700&family=Young+Serif&display=swap">
+
+  <link rel="preload" as="image" type="image/webp"
+        imagesrcset="assets/images/hero-mobile-600.webp 600w, assets/images/hero-mobile-900.webp 900w, assets/images/hero-mobile-1200.webp 1200w"
+        imagesizes="100vw" media="(max-width: 599px)">
+  <link rel="preload" as="image" type="image/webp"
+        imagesrcset="assets/images/hero-1000.webp 1000w, assets/images/hero-1600.webp 1600w, assets/images/hero-2400.webp 2400w"
+        imagesizes="(min-width: 790px) 55vw, 100vw" media="(min-width: 600px)">
+
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="wordmark" href="#top" aria-label="Nordic Grind, back to top">
+        <img class="wordmark__mark" src="assets/images/logo/mark.svg" alt="" width="28" height="28">
+        <span class="wordmark__text">Nordic Grind</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#roastery">Roastery</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#beans">Beans</a></li>
+          <li><a href="#visit">Visit</a></li>
+        </ul>
+      </nav>
+
+      <p class="site-header__status" data-open-status>Mon–Fri 07:30–17:00</p>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="menu-toggle__label">Menu</span>
+        <span class="menu-toggle__icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Main, mobile">
+        <ul>
+          <li><a href="#roastery">Roastery</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#beans">Beans</a></li>
+          <li><a href="#visit">Visit</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu__info">
+        <p>Blågårdsgade 14<br>2200 København N</p>
+        <p>Mon–Fri 07:30–17:00<br>Sat–Sun 09:00–16:00</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__text">
+        <h1 class="hero__title" id="hero-title">Roasted in the back. Poured at the front.</h1>
+        <p class="hero__lede">A small coffee bar on Blågårdsgade. We roast our own beans once a week and serve them as espresso, filter and by the bag, with buns from the bakery two doors down.</p>
+
+        <div class="hero__actions">
+          <a class="button" href="#menu">See the menu</a>
+          <a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Bl%C3%A5g%C3%A5rdsgade%2014%2C%202200%20K%C3%B8benhavn%20N" target="_blank" rel="noopener">Get directions</a>
+        </div>
+
+        <dl class="hero__facts">
+          <div>
+            <dt>Today</dt>
+            <dd data-open-status>Mon–Fri 07:30–17:00, Sat–Sun 09:00–16:00</dd>
+          </div>
+          <div>
+            <dt>Find us</dt>
+            <dd>Blågårdsgade 14, <span class="nowrap">2200 København N</span></dd>
+          </div>
+        </dl>
+      </div>
+
+      <figure class="hero__media">
+        <div class="hero__frame">
+        <picture>
+          <source media="(max-width: 599px)" type="image/webp"
+                  srcset="assets/images/hero-mobile-600.webp 600w, assets/images/hero-mobile-900.webp 900w, assets/images/hero-mobile-1200.webp 1200w"
+                  sizes="100vw">
+          <source media="(max-width: 599px)"
+                  srcset="assets/images/hero-mobile-600.jpg 600w, assets/images/hero-mobile-900.jpg 900w, assets/images/hero-mobile-1200.jpg 1200w"
+                  sizes="100vw">
+          <source type="image/webp"
+                  srcset="assets/images/hero-1000.webp 1000w, assets/images/hero-1600.webp 1600w, assets/images/hero-2400.webp 2400w"
+                  sizes="(min-width: 790px) 55vw, 100vw">
+          <img src="assets/images/hero-1600.jpg"
+               srcset="assets/images/hero-1000.jpg 1000w, assets/images/hero-1600.jpg 1600w, assets/images/hero-2400.jpg 2400w"
+               sizes="(min-width: 790px) 55vw, 100vw" width="1600" height="893" fetchpriority="high"
+               alt="The bar at Nordic Grind in low morning sun: a long oak counter with an espresso machine stacked with terracotta cups, a Chemex, and plants on wall shelves by the big street windows.">
+        </picture>
+        <!-- Ambient loop of the same shot; loaded by site.js unless reduced motion or data saver is on -->
+        <video class="hero__video" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"
+               data-src="assets/video/hero-loop.mp4"></video>
+        </div>
+        <figcaption>The bar, a little after eight in the morning.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Roastery -->
+    <section class="roastery" id="roastery" aria-labelledby="roastery-title">
+      <div class="wrap roastery__grid">
+        <h2 class="roastery__title" id="roastery-title">We roast on Tuesdays, in the room behind the bar.</h2>
+
+        <figure class="roastery__media" data-reveal>
+          <picture>
+            <source type="image/webp"
+                    srcset="assets/images/roastery-700.webp 700w, assets/images/roastery-1100.webp 1100w, assets/images/roastery-1600.webp 1600w"
+                    sizes="(min-width: 790px) 40vw, 100vw">
+            <img src="assets/images/roastery-1100.jpg"
+                 srcset="assets/images/roastery-700.jpg 700w, assets/images/roastery-1100.jpg 1100w, assets/images/roastery-1600.jpg 1600w"
+                 sizes="(min-width: 790px) 40vw, 100vw" width="1100" height="1366" loading="lazy"
+                 alt="A small drum roaster on a worn wooden bench beside a sack of green beans and a wooden scoop. Freshly roasted beans steam in a cooling tray in the foreground.">
+          </picture>
+          <figcaption>Five kilos at a time. The green beans wait in sacks by the window.</figcaption>
+        </figure>
+
+        <div class="roastery__body">
+          <p>Every bag on our shelf and every shot at the bar comes from the same small drum roaster, a few metres from where you order. We buy green coffee from a handful of farms we know by name and roast it light enough to taste where it came from.</p>
+          <p>Roasting small means we can change things week to week, and that nothing sits around getting stale.</p>
+
+          <h3 class="roastery__subtitle">A week in the life of a bag of beans</h3>
+          <ol class="week" data-week>
+            <li>
+              <span class="week__day">Tuesday</span>
+              <span class="week__what">Roasted in small batches, cooled and bagged by hand the same afternoon.</span>
+            </li>
+            <li>
+              <span class="week__day">Wednesday to Sunday</span>
+              <span class="week__what">Resting. Fresh coffee needs a few days to settle before it tastes its best.</span>
+            </li>
+            <li>
+              <span class="week__day">From Monday</span>
+              <span class="week__what">On the bar and on the shelf, until the next roast comes out.</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu" id="menu" aria-labelledby="menu-title">
+      <div class="wrap menu__grid">
+        <header class="menu__head">
+          <h2 id="menu-title">Menu</h2>
+          <p>Prices in Danish kroner. Oat milk at no extra charge.</p>
+          <figure class="shot menu__shot" data-reveal>
+            <div class="shot__frame">
+              <picture>
+                <source type="image/webp" srcset="assets/images/pour-600.webp 600w, assets/images/pour-896.webp 896w" sizes="(min-width: 1100px) 22vw, (min-width: 790px) 40vw, 100vw">
+                <img src="assets/images/pour-896.jpg" srcset="assets/images/pour-600.jpg 600w, assets/images/pour-896.jpg 896w" sizes="(min-width: 1100px) 22vw, (min-width: 790px) 40vw, 100vw"
+                     width="896" height="1120" loading="lazy" data-parallax
+                     alt="A barista pours steamed milk into a terracotta cup on the oak counter, steam catching the low morning sun from the street windows.">
+              </picture>
+            </div>
+            <figcaption>Flat white, poured at the counter.</figcaption>
+          </figure>
+        </header>
+
+        <div class="menu__list">
+          <h3>Coffee</h3>
+          <ul class="price-list">
+            <li><span>Espresso</span><span class="price">32</span></li>
+            <li><span>Cortado</span><span class="price">38</span></li>
+            <li><span>Cappuccino</span><span class="price">45</span></li>
+            <li><span>Flat white</span><span class="price">45</span></li>
+            <li><span>Caffè latte</span><span class="price">48</span></li>
+            <li><span>Filter, by the cup <small>This week's single origin, brewed to order</small></span><span class="price">38</span></li>
+            <li><span>Batch brew <small>Refills are free</small></span><span class="price">35</span></li>
+          </ul>
+        </div>
+
+        <div class="menu__list">
+          <h3>Food</h3>
+          <ul class="price-list">
+            <li><span>Cardamom bun</span><span class="price">35</span></li>
+            <li><span>Cinnamon snail</span><span class="price">32</span></li>
+            <li><span>Rye toast <small>With butter and aged cheese</small></span><span class="price">55</span></li>
+            <li><span>Seasonal porridge <small>Ask what's on it today</small></span><span class="price">65</span></li>
+          </ul>
+          <p class="menu__note">Buns are baked each morning by our neighbours at the bakery two doors down. When they're gone, they're gone.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beans -->
+    <section class="beans" id="beans" aria-labelledby="beans-title">
+      <div class="wrap">
+        <header class="beans__head">
+          <h2 id="beans-title">Beans to take home</h2>
+          <p>250 g bags on the shelf by the door, roasted the Tuesday before. Tell us how you brew and we'll grind them for you.</p>
+          <figure class="shot beans__shot" data-reveal>
+            <div class="shot__frame">
+              <picture>
+                <source type="image/webp" srcset="assets/images/beans-cooling-600.webp 600w, assets/images/beans-cooling-896.webp 896w" sizes="(min-width: 790px) 34vw, 100vw">
+                <img src="assets/images/beans-cooling-896.jpg" srcset="assets/images/beans-cooling-600.jpg 600w, assets/images/beans-cooling-896.jpg 896w" sizes="(min-width: 790px) 34vw, 100vw"
+                     width="896" height="1120" loading="lazy" data-parallax
+                     alt="Freshly roasted coffee beans pour from the drum roaster into a steel cooling tray, with a wooden scoop on the rim and smoke drifting through the window light.">
+              </picture>
+            </div>
+            <figcaption>Tuesday afternoon: a batch drops into the cooling tray.</figcaption>
+          </figure>
+        </header>
+
+        <ul class="bean-list">
+          <li class="bean">
+            <h3 class="bean__name">Huila</h3>
+            <p class="bean__origin">Colombia, washed<br><span class="bean__use">Filter and espresso</span></p>
+            <p class="bean__notes">Red apple, panela, cocoa</p>
+            <p class="bean__price"><span class="price">125</span> kr</p>
+          </li>
+          <li class="bean">
+            <h3 class="bean__name">Sidama</h3>
+            <p class="bean__origin">Ethiopia, natural<br><span class="bean__use">Best as filter</span></p>
+            <p class="bean__notes">Bergamot, apricot, black tea</p>
+            <p class="bean__price"><span class="price">145</span> kr</p>
+          </li>
+          <li class="bean">
+            <h3 class="bean__name">House</h3>
+            <p class="bean__origin">Our everyday espresso<br><span class="bean__use">Espresso and milk drinks</span></p>
+            <p class="bean__notes">Hazelnut, milk chocolate</p>
+            <p class="bean__price"><span class="price">115</span> kr</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Visit -->
+    <section class="visit" id="visit" aria-labelledby="visit-title">
+      <figure class="visit__media" data-widen>
+        <picture>
+          <source media="(max-width: 599px)" type="image/webp"
+                  srcset="assets/images/room-mobile-600.webp 600w, assets/images/room-mobile-900.webp 900w, assets/images/room-mobile-1200.webp 1200w"
+                  sizes="100vw">
+          <source media="(max-width: 599px)"
+                  srcset="assets/images/room-mobile-600.jpg 600w, assets/images/room-mobile-900.jpg 900w, assets/images/room-mobile-1200.jpg 1200w"
+                  sizes="100vw">
+          <source type="image/webp"
+                  srcset="assets/images/room-1000.webp 1000w, assets/images/room-1600.webp 1600w, assets/images/room-2400.webp 2400w, assets/images/room-3168.webp 3168w"
+                  sizes="100vw">
+          <img src="assets/images/room-1600.jpg"
+               srcset="assets/images/room-1000.jpg 1000w, assets/images/room-1600.jpg 1600w, assets/images/room-2400.jpg 2400w, assets/images/room-3168.jpg 3168w"
+               sizes="100vw" width="1600" height="679" loading="lazy"
+               alt="The long, narrow room seen from the back: an oak counter on the left, wooden stools along the window bar, a bench with sage cushions, and shelves of cups and coffee bags on white-painted brick.">
+        </picture>
+      </figure>
+
+      <div class="wrap visit__grid">
+        <div class="visit__intro">
+          <h2 id="visit-title">Come by</h2>
+          <p>Twenty seats, a window bar facing the street and a bench at the back. No laptops at the window on weekends, so there's room for everyone.</p>
+
+        </div>
+
+        <figure class="shot visit__shot" data-reveal>
+          <div class="shot__frame">
+            <picture>
+              <source type="image/webp" srcset="assets/images/window-bar-600.webp 600w, assets/images/window-bar-896.webp 896w" sizes="(min-width: 1100px) 28vw, (min-width: 790px) 45vw, 100vw">
+              <img src="assets/images/window-bar-896.jpg" srcset="assets/images/window-bar-600.jpg 600w, assets/images/window-bar-896.jpg 896w" sizes="(min-width: 1100px) 28vw, (min-width: 790px) 45vw, 100vw"
+                   width="896" height="1120" loading="lazy" data-parallax
+                   alt="A cardamom bun on a stoneware plate and a glass of filter coffee on the oak window bar, two wooden stools below and a Copenhagen street with a parked bicycle outside.">
+            </picture>
+          </div>
+          <figcaption>The window bar. Best seat in the house before nine.</figcaption>
+        </figure>
+
+        <div class="visit__block visit__block--address">
+          <h3>Address</h3>
+          <address>Blågårdsgade 14<br>2200 København N</address>
+          <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Bl%C3%A5g%C3%A5rdsgade%2014%2C%202200%20K%C3%B8benhavn%20N" target="_blank" rel="noopener">Get directions</a>
+        </div>
+
+        <div class="visit__block visit__block--hours">
+          <h3>Opening hours</h3>
+          <dl class="hours">
+            <div data-days="1-5"><dt>Monday to Friday</dt><dd>07:30–17:00</dd></div>
+            <div data-days="0,6"><dt>Saturday and Sunday</dt><dd>09:00–16:00</dd></div>
+          </dl>
+          <p class="visit__status" data-open-status-long></p>
+        </div>
+
+        <div class="visit__block visit__block--contact">
+          <h3>Get in touch</h3>
+          <p><a class="text-link" href="mailto:hej@nordicgrind.dk">hej@nordicgrind.dk</a></p>
+          <p><a class="text-link icon-link" href="https://www.instagram.com/nordicgrind.cph/" target="_blank" rel="noopener">
+            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg>
+            @nordicgrind.cph</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__grid">
+      <p class="site-footer__wordmark">
+        <img src="assets/images/logo/mark-light.svg" alt="" width="44" height="44">
+        <span>Nordic Grind</span>
+      </p>
+      <p>Blågårdsgade 14<br>2200 København N</p>
+      <p>Mon–Fri 07:30–17:00<br>Sat–Sun 09:00–16:00</p>
+      <p><a href="https://www.instagram.com/nordicgrind.cph/" target="_blank" rel="noopener">Instagram</a><br><a href="mailto:hej@nordicgrind.dk">hej@nordicgrind.dk</a></p>
+      <p class="site-footer__small">© <span data-year>2026</span> Nordic Grind. Coffee roasted in Copenhagen N.</p>
+    </div>
+  </footer>
+</body>
+</html>
